@@ -3,25 +3,25 @@ Sistema de simulação de operações bancárias com Saque, Depósito, Consulta 
 
 # Estrutura do Projeto
 
-br.com.samirmelo.operacaobancaria
-├── model
-│   ├── Conta.java
-│   └── ContaCorrente.java
-└── service
-    ├── Deposito.java
-    ├── DepositoEspecie.java
-    ├── DepositoPix.java
+br.com.samirmelo.operacaobancaria  
+├── model  
+│   ├── Conta.java  
+│   └── ContaCorrente.java  
+└── service  
+    ├── Deposito.java  
+    ├── DepositoEspecie.java  
+    ├── DepositoPix.java  
     ├── DepositoTransferencia.java
-    ├── EmitirSaldo.java
-    ├── LoginService.java
-    ├── MenuService.java
-    ├── OperacaoBancaria.java
-    └── Saque.java
+    ├── EmitirSaldo.java  
+    ├── LoginService.java  
+    ├── MenuService.java  
+    ├── OperacaoBancaria.java  
+    └── Saque.java  
 App.java
 
 # 📄 Código e documentação linha a linha
 
-# 1️⃣ Conta.java
+## 1️⃣ Conta.java  
 public abstract class Conta {
     protected String titular; // nome do titular da conta
     protected double saldo;   // saldo atual da conta
