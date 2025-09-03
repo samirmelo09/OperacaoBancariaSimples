@@ -17,8 +17,9 @@ public class Saque implements OperacaoBancaria {
     @Override
     public void executar() {
         if (valor > 0 && valor <= conta.getSaldo()) {
-            conta.atualizarSaldo(-valor);
-            System.out.println("Saque de R$ " + valor + " realizado com sucesso.");
+            conta.atualizarSaldo(-valor); // ou conta.sacar(valor) se usar a refatoração
+            System.out.printf("Saque de R$ %.2f realizado com sucesso, seu saldo atual é de R$ %.2f%n",
+                    valor, conta.getSaldo());
         } else {
             System.out.println("Saldo insuficiente ou valor inválido para saque.");
         }

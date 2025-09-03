@@ -1,5 +1,6 @@
 package br.com.samirmelo.operacaobancaria.model;
 
+
 /**
  * Classe abstrata representando uma conta bancária genérica.
  */
@@ -26,4 +27,6 @@ public abstract class Conta {
 
     // Método abstrato que cada tipo de conta pode implementar de forma diferente
     public abstract void exibirTipoConta();
+
+
 }

@@ -2,10 +2,17 @@ package br.com.samirmelo.operacaobancaria.service;
 
 import java.util.Scanner;
 
+/**
+ * Serviço de autenticação simples para acesso ao sistema bancário.
+ */
 public class LoginService {
     private static final String LOGIN_VALIDO = "student1";
     private static final String SENHA_VALIDA = "12345";
 
+    /**
+     * Executa o processo de login.
+     * @return true se credenciais corretas, false caso contrário.
+     */
     public boolean autenticar() {
         Scanner scanner = new Scanner(System.in);
 

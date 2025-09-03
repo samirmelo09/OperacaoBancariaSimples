@@ -9,6 +9,6 @@ public class DepositoEspecie extends Deposito {
 
     @Override
     protected String getTipoDeposito() {
-        return "Depósito em Espécie";
+        return "Deposito em Espécie";
     }
 }

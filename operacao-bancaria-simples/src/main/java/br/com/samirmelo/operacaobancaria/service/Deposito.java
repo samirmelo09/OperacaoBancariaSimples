@@ -17,8 +17,10 @@ public abstract class Deposito implements OperacaoBancaria {
     @Override
     public void executar() {
         if (valor > 0) {
-            conta.atualizarSaldo(valor);
-            System.out.println("Depósito de R$ " + valor + " realizado via " + getTipoDeposito());
+            conta.atualizarSaldo(valor); // ou conta.depositar(valor) se usar a refatoração
+            // printf com 2 casas decimais para o valor e saldo
+            System.out.printf("Depósito de R$ %.2f realizado via %s, seu saldo atual é de R$ %.2f%n",
+                    valor, getTipoDeposito(), conta.getSaldo());
         } else {
             System.out.println("Valor de depósito inválido.");
         }
